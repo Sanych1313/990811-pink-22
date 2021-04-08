@@ -9,6 +9,8 @@
 <body>
 
   <header class="page-header">
+    <h1 class="visually-hidden">Сайт фотоприложеия Pink</h1>
+    
     <div class="page-header__panel-open">
       <div class="page-header__wrapper">
         <a class="pade-header__logo">
@@ -58,55 +60,39 @@
     </div><!--/intro__panel-close-->
   </header><!--/page-header-->
 
-  <h1 class="visually-hidden">Сайт фотоприложеия Pink</h1>
-
-  <section class="intro-index intro">
+  <section class="intro--index intro">
     <div class="intro__wrapper">
-      <div class="intro__container-top">
-        <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+      <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
 
-        <div class="intro__pic">
-          <picture class="intro__pic-hand">
-            <img src="img/intro-pic-hand.png" alt="Фон рука с телефоном" width="360" height="286">
-          </picture>
+      <a class="intro__button button"  href="#">Скачать приложение</a>
 
-          <picture class="intro__pic-photo">
-            <img src="img/intro-pic-photo.jpg" alt="Фон фото в телефоне" width="111" height="197">
-          </picture>
-        </div>
-      </div><!--/intro__container-top-->
+      <ul class="intro__apps">
+        <li class="intro__apps-item">
+          <a class="intro__apps-link intro__apps-link--apple" href="#">
+            <svg>
+              <use xlink:href="#apple-logo"></use>
+            </svg>
+            apple</a>
+        </li>
 
-      <div class="intro__container-bottom">
-        <a class="intro__button button"  href="#">Скачать приложение</a>
+        <li class="intro__apps-item">
+          <a class="intro__apps-link intro__apps-link--android" href="#">
+            <svg>
+              <use xlink:href="#android-logo"></use>
+            </svg>
+            android</a>
+        </li>
 
-        <ul class="intro__apps">
-          <li class="intro__apps-item">
-            <a class="intro__apps-link intro__apps-link--apple" href="#">
-              <svg>
-                <use xlink:href="#apple-logo"></use>
-              </svg>
-              apple</a>
-          </li>
+        <li class="intro__apps-item">
+          <a class="intro__apps-link intro__apps-link--microsoft" href="#">
+            <svg>
+              <use xlink:href="#microsoft-logo"></use>
+            </svg>
+            microsoft</a>
+        </li>
+      </ul>
 
-          <li class="intro__apps-item">
-            <a class="intro__apps-link intro__apps-link--android" href="#">
-              <svg>
-                <use xlink:href="#android-logo"></use>
-              </svg>
-              android</a>
-          </li>
-
-          <li class="intro__apps-item">
-            <a class="intro__apps-link intro__apps-link--microsoft" href="#">
-              <svg>
-                <use xlink:href="#microsoft-logo"></use>
-              </svg>
-              microsoft</a>
-          </li>
-        </ul>
-
-        <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div><!--/intro__container-->
+      <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div><!--/intro-wrapper-->
   </section><!--/intro-index-->
 
@@ -132,14 +118,16 @@
         </li>
       </ul><!--/info__list-->
       
-      <picture class="info__pic-phone">
-        <img src="img/iphone 3.png" alt="Айфон" width="157" height="320">
-      </picture>
+      <div class="info__pic info-pic">
+        <picture class="info-pic__phone">
+          <img src="img/iphone 3.png" alt="Айфон" width="157" height="320">
+        </picture>
 
-      <picture class="info__pic-screen">
-        <img src="img/iphone screen-3.jpg" alt="Скрин" width="140" height="249">
-      </picture>
-    </div>
+        <picture class="info-pic__screen">
+          <img src="img/iphone screen-3.jpg" alt="Скрин" width="140" height="249">
+        </picture>
+      </div>
+    </div><!--/info__wrapper-->
   </div><!--/info-->
 
   <div class="review">
@@ -206,7 +194,7 @@
       <p class="contacts__description">Свяжитесь с нами!</p>
       <ul class="contacts__list">
         <li class="contacts__item contacts__item--phone">
-          <span>Звоните:</span><a class="contacts__link contacts__link--phone" href="tel:+78125556666">+7(812)555-66-66</a>
+          <span>Звоните:</span><a class="contacts__link" href="tel:+78125556666">+7(812)555-66-66</a>
         </li>
 
         <li class="contacts__item contacts__item--mail">
@@ -236,15 +224,15 @@
 
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__twitter" href="#">twitter</a>
+          <a class="social__link" href="#">twitter</a>
         </li>
 
         <li class="social__item">
-          <a class="social__link social__fb" href="#">facebook</a>
+          <a class="social__link" href="#">facebook</a>
         </li>
 
         <li class="social__item">
-          <a class="social__link social__youtube" href="#">youtube</a>
+          <a class="social__link" href="#">youtube</a>
         </li>
       </ul>
 
