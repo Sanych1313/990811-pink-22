@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<header class="page-header">
+  <header class="page-header">
     <h1 class="visually-hidden">Сайт фотоприложеия Pink</h1>
     
     <div class="page-header__panel-open">
@@ -60,7 +60,7 @@
     </div><!--/intro__panel-close-->
   </header><!--/page-header-->
 
-  <div class="intro-form intro">
+  <div class="intro--form intro">
     <h2 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
   </div>
 
@@ -71,70 +71,95 @@
 
     <form class="competition__form competition-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="competition-form__user form-user">
-        <label class="form-user__label" for="user-surname">Фамилия:</label>
-        <input class="form-user__input" type="text" id="user-surname" placeholder="Укажите фамилию *">
+        <div class="form-user__wrapper">
+          <label class="form-user__label" for="user-surname">Фамилия:</label>
+          <input class="form-user__input" type="text" id="user-surname" placeholder="Укажите фамилию *">
+        </div>
 
-        <label class="form-user__label" for="user-name">Имя:</label>
-        <input class="form-user__input" type="text" id="user-name" placeholder="Введите ваше имя *">
+        <div class="form-user__wrapper">
+          <label class="form-user__label" for="user-name">Имя:</label>
+          <input class="form-user__input" type="text" id="user-name" placeholder="Введите ваше имя *">
+        </div>
 
-        <label class="form-user__label" for="user-patronymi">Отчество:</label>
-        <input class="form-user__input" type="text" id="user-patronymic" placeholder="Ну и отчество тоже">
+        <div class="form-user__wrapper">
+          <label class="form-user__label" for="user-patronymi">Отчество:</label>
+          <input class="form-user__input" type="text" id="user-patronymic" placeholder="Ну и отчество тоже">
+        </div>
       </div><!--/competition-form__user-->
 
       <div class="competition-form__wrapper competition-form__wrapper-achievements">
         <fieldset class="competition-form__achievements form-achievements">
           <legend class="form-achievements__title">Ваши безбашенные достижения в путешествии</legend>
-          <h4 class="form-achievements__title--mobile">Ваши безбашенные &nbsp; достижения в путешествии</h4>
 
-          <input type="checkbox" id="selfie" name="selfie-with-shark" checked>
-          <label class="form-achievements__checkbox" for="selfie">Сделал селфи с акулой</label>
+          <div class="form-achievements__wrapper">
+            <input type="checkbox" id="selfie" name="selfie-with-shark" checked>
+            <label class="form-achievements__checkbox" for="selfie">Сделал селфи с акулой</label>
+          </div>
         
-          <input type="checkbox" id="burnt" name="burnt-on-beach" checked>
-          <label class="form-achievements__checkbox" for="burnt">Обгорел на пляже</label>
+          <div class="form-achievements__wrapper">
+            <input type="checkbox" id="burnt" name="burnt-on-beach" checked>
+            <label class="form-achievements__checkbox" for="burnt">Обгорел на пляже</label>
+          </div>
 
-          <input type="checkbox" id="movie-star" name="saw-movie-star">
-          <label class="form-achievements__checkbox" for="movie-star">Видел Чака Норриса</label>
+          <div class="form-achievements__wrapper">
+            <input type="checkbox" id="movie-star" name="saw-movie-star">
+            <label class="form-achievements__checkbox" for="movie-star">Видел Чака Норриса</label>
+          </div>
 
-          <input type="checkbox" id="souvenirs" name="bay-souvenirs">
-          <label class="form-achievements__checkbox" for="souvenirs">Накупил сувениров</label>
+          <div class="form-achievements__wrapper">
+            <input type="checkbox" id="souvenirs" name="bay-souvenirs">
+            <label class="form-achievements__checkbox" for="souvenirs">Накупил сувениров</label>
+          </div>
 
-          <input type="checkbox" id="tower" name="kept-tower" checked>
-          <label class="form-achievements__checkbox" for="tower">Удержал башню</label>
+          <div class="form-achievements__wrapper">
+            <input type="checkbox" id="tower" name="kept-tower" checked>
+            <label class="form-achievements__checkbox" for="tower">Удержал башню</label>
+          </div>
 
-          <input type="checkbox" id="hotel" name="defeated-hotel">
-          <label class="form-achievements__checkbox" for="hotel">Разгромил отель</label>
+          <div class="form-achievements__wrapper">
+            <input type="checkbox" id="hotel" name="defeated-hotel">
+            <label class="form-achievements__checkbox" for="hotel">Разгромил отель</label>
+          </div>
         </fieldset><!--/competition-form__achievements-->
       </div><!--/competition__wrapper-->
 
       <fieldset class="competition-form__contacts form-contacts">
         <legend class="form-contacts__title">Контактная иформация</legend>
 
-        <label class="form-contacts__label" for="contacts-phone">Номер телефона</label>
-        <input class="form-contacts__input" type="tel" id="contacts-phone" placeholder="Номер, пожалуйста" pattern="[0-9]{3}-[0-9]{7}">
+        <div class="form-contacts__wrapper">
+          <label class="form-contacts__label" for="contacts-phone">Номер телефона</label>
+          <input class="form-contacts__input" type="tel" id="contacts-phone" placeholder="Номер, пожалуйста" pattern="[0-9]{3}-[0-9]{7}">
+        </div>
 
-        <label class="form-contacts__label" for="contacts-mail">Адрес почты</label>
-        <input class="form-contacts__input" type="email" id="contacts-mail" placeholder="Введите почту *">
+        <div class="form-contacts__wrapper">
+          <label class="form-contacts__label" for="contacts-mail">Адрес почты</label>
+          <input class="form-contacts__input" type="email" id="contacts-mail" placeholder="Введите почту *">
+        </div>
       </fieldset><!--/competition-form__contacts-->
 
       <div class="competition-form__wrapper competition-form__wrapper-apps">
         <fieldset class="competition-form__apps form-apps">
           <legend class="form-apps__title">С каким приложением путешествовали?</legend>
-          <h4 class="form-apps__title--mobile">С каким приложением путешествовали?</h4>
 
-          <input type="radio" id="iOS" name="travel-apps" value="iOS" checked>
-          <label class="form-apps__radio" for="iOS">Pink для iOS</label>
+          <div class="form-apps__wrapper">
+            <input type="radio" id="iOS" name="travel-apps" value="iOS" checked>
+            <label class="form-apps__radio" for="iOS">Pink для iOS</label>
+          </div>
 
-          <input type="radio" id="Android" name="travel-apps" value="Android">
-          <label class="form-apps__radio" for="Android">Pink на Android</label>
+          <div class="form-apps__wrapper">
+            <input type="radio" id="Android" name="travel-apps" value="Android">
+            <label class="form-apps__radio" for="Android">Pink на Android</label>
+          </div>
 
-          <input type="radio" id="Windows" name="travel-apps" value="Windows">
-          <label class="form-apps__radio" for="Windows">Windows Phone</label>
+          <div class="form-apps__wrapper">
+            <input type="radio" id="Windows" name="travel-apps" value="Windows">
+            <label class="form-apps__radio" for="Windows">Windows Phone</label>
+          </div>
         </fieldset><!--/competition-form__apps-->
       </div><!--/competition__wrapper-->
 
       <fieldset class="competition-form__emotion form-emotion">
         <legend class="form-emotion__title">Опишите свои эмоции</legend>
-        <h4 class="form-emotion__title--mobile">Опишите свои эмоции</h4>
 
         <textarea class="form-emotion__text" name="emotion-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset><!--/competition-form__emotion-->
@@ -194,7 +219,10 @@
   <div class="popup-error popup">
     <h3 class="popup__title">Что-то пошло не так!</h3>
     <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="poppup-error__button btn">Ок</button>
+    
+    <div class="popup-error__wrapper-button">
+      <button class="poppup-error__button btn">Ок</button>
+    </div>
   </div><!--/popup-error-->
 
   <div class="popup-sent popup">
